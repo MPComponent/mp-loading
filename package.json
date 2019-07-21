@@ -1,0 +1,22 @@
+{
+  "name": "mp-loading",
+  "version": "1.0.0",
+  "description": "loading component for Mini Program",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MPComponent/mp-loading.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MPComponent/mp-loading/issues"
+  },
+  "homepage": "https://github.com/MPComponent/mp-loading#readme"
+}
