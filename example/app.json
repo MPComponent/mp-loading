@@ -1,0 +1,16 @@
+{
+  "window": {
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "loading component",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f8f8f8"
+  },
+  "pages": [
+    "pages/loading-custom/index"
+  ],
+  "usingComponents": {
+    "mp-loading": "./dist/"
+  },
+  "sitemapLocation": "sitemap.json"
+}
