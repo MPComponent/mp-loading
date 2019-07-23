@@ -10,7 +10,8 @@
     "pages/loading-custom/index"
   ],
   "usingComponents": {
-    "mp-loading": "./dist/"
+    "demo-block": "../../components/demo-block/index",
+    "mp-loading": "../../dist/mp-loading/index"
   },
   "sitemapLocation": "sitemap.json"
 }
