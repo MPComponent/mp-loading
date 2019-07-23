@@ -6,7 +6,8 @@
     "noImplicitAny": false,
     "declaration": true,
     "outDir": "dist",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "types": ["miniprogram-api-typings"]
   },
   "include": ["src/**/*", "types/**/*"]
 }

@@ -2342,6 +2342,11 @@ minipass@^2.2.1, minipass@^2.3.5:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
 
+miniprogram-api-typings@^2.6.5-2:
+  version "2.6.5-2"
+  resolved "https://registry.npm.taobao.org/miniprogram-api-typings/download/miniprogram-api-typings-2.6.5-2.tgz#990e3e5b91074ba4306bf6b8173cf38b632b4d3f"
+  integrity sha1-mQ4+W5EHS6Qwa/a4Fzzzi2MrTT8=
+
 minizlib@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npm.taobao.org/minizlib/download/minizlib-1.2.1.tgz#dd27ea6136243c7c880684e8672bb3a45fd9b614"
