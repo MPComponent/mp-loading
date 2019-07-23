@@ -3,7 +3,6 @@ const path = require('path')
 const less = require('gulp-less')
 const ts = require('gulp-typescript')
 const rename = require('gulp-rename')
-const insert = require('gulp-insert')
 const postcss = require('gulp-postcss')
 
 const tsConfig = path.resolve(__dirname, '../tsconfig.json')
@@ -17,14 +16,6 @@ const compileLess = dist => () =>
     .src(`${src}/**/*.less`)
     .pipe(less())
     .pipe(postcss())
-    .pipe(
-      insert.transform((contents, file) => {
-        if (!file.path.includes('src' + path.sep + 'common')) {
-          contents = `@import '../common/index.wxss';` + contents
-        }
-        return contents
-      })
-    )
     .pipe(
       rename(path => {
         path.extname = '.wxss'
@@ -44,7 +35,14 @@ const compileTs = (dist, config) => () => {
 
 const copy = (dist, ext) => () => gulp.src(`${src}/**/*.${ext}`).pipe(gulp.dest(dist))
 
-const compile = (dist, config) => gulp.parallel(compileTs(dist, config), compileLess(dist), copy(dist, 'wxml'), copy(dist, 'wxs'), copy(dist, 'json'))
+const compile = (dist, config) =>
+  gulp.parallel(
+    compileTs(dist, config),
+    compileLess(dist),
+    copy(dist, 'wxml'),
+    copy(dist, 'wxs'),
+    copy(dist, 'json')
+  );
 
 if (isProduction) {
   // TODO
