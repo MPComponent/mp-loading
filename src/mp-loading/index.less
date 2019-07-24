@@ -1,0 +1,55 @@
+.spin-dot-wrap {
+  /* position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%); */
+  .spin-dot-wrap-rotate {
+    margin: 0 auto;
+    height: 100%;
+    transform: rotate(45deg);
+    animation: rotate 1.2s infinite linear;
+    .spin-dot-item {
+      position: absolute;
+      border-radius: 100%;
+      opacity: 0.3;
+      transform: scale(0.75);
+      animation: spinMove 0.3s infinite linear alternate;
+      &:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+      &:nth-child(2) {
+        top: 0;
+        right: 0;
+        animation-delay: 0.4s;
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        left: 0;
+        animation-delay: 0.8s;
+      }
+      &:nth-child(4) {
+        right: 0;
+        bottom: 0;
+        animation-delay: 1.2s;
+      }
+    }
+  }
+  .spin-tip {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@keyframes spinMove {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(405deg);
+  }
+}

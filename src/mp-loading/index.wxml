@@ -1,1 +1,8 @@
-<view>ss</view>
+<View class='spin-dot-wrap'>
+  <View class='spin-dot-wrap-rotate' style="width: {{ size }}px; height: {{ size }}px">
+    <block wx:for="{{[1,2,3,4]}}" wx:key="{{item}}">
+      <View class='spin-dot-item' style="width: {{ size/2 - 2}}px; height: {{ size/2 - 2}}px ;background-color: {{color}};" />
+    </block>
+  </View>
+  <view class="spin-tip" style="color: {{color}}">加载中...</view>
+</View>
