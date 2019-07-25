@@ -7,6 +7,14 @@ Component({
     color: {
       type: String,
       value: '#1890ff'
+    },
+    showTip: {
+      type: Boolean,
+      value: false
+    },
+    tip: {
+      type: String,
+      value: '加载中...'
     }
   }
 })

@@ -1,3 +1,6 @@
 <demo-block title="Loading Component" padding>
-  <mp-loading></mp-loading>
+  <view class="mp-loading">
+    <mp-loading></mp-loading>
+    <mp-loading size="40"></mp-loading>
+  </view>
 </demo-block>

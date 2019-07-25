@@ -4,5 +4,8 @@
       <View class='spin-dot-item' style="width: {{ size/2 - 2}}px; height: {{ size/2 - 2}}px ;background-color: {{color}};" />
     </block>
   </View>
-  <view class="spin-tip" style="color: {{color}}">加载中...</view>
+  <block wx:if="{{showTip}}">
+  <view class="spin-tip" style="color: {{color}}">{{tip}}</view>
+  </block>
+  
 </View>
