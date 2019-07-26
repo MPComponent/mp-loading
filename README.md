@@ -8,7 +8,7 @@
 
 ### 安装
 
-* 通过 npm 安装 (推荐)
+#### 方式一. 通过 npm 安装 (推荐)
 
 小程序已经支持使用 npm 安装第三方包，[具体使用方法](https://github.com/MPComponent/mp-loading/issues/1)。
 
@@ -20,7 +20,7 @@ npm i mp-loading -S --production
 yarn add mp-loading --production
 ```
 
-* 下载代码
+#### 方式二. 下载代码
 
 直接通过 git 下载 `mp-loading` 源代码，并将 `dist` 目录拷贝到自己的项目中。
 
