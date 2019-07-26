@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "loading component for Mini Program",
   "miniprogram": "dist",
+  "files": [
+    "dist"
+  ],
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.6.1",

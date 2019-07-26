@@ -9,6 +9,7 @@ const tsConfig = path.resolve(__dirname, '../tsconfig.json')
 const exampleDir = path.resolve(__dirname, '../example/dist')
 const isProduction = process.env.NODE_ENV === 'production'
 const src = path.join(__dirname, '../src')
+const esDir = path.resolve(__dirname, '../dist')
 
 // less
 const compileLess = dist => () =>
@@ -35,17 +36,10 @@ const compileTs = (dist, config) => () => {
 
 const copy = (dist, ext) => () => gulp.src(`${src}/**/*.${ext}`).pipe(gulp.dest(dist))
 
-const compile = (dist, config) =>
-  gulp.parallel(
-    compileTs(dist, config),
-    compileLess(dist),
-    copy(dist, 'wxml'),
-    copy(dist, 'wxs'),
-    copy(dist, 'json')
-  );
+const compile = (dist, config) => gulp.parallel(compileTs(dist, config), compileLess(dist), copy(dist, 'wxml'), copy(dist, 'wxs'), copy(dist, 'json'))
 
 if (isProduction) {
-  // TODO
+  gulp.series(compile(esDir))()
 } else {
   compile(exampleDir)()
 
