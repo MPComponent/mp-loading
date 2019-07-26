@@ -1,0 +1,7 @@
+<view>
+  <view class="mp-mask">
+    <view class="mp-loading-content">
+      <mp-loading showTip tip='Loading...' />
+    </view>
+  </view>
+</view>
