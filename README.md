@@ -16,7 +16,7 @@ yarn add mp-loading --production
 ```
 
 * 下载代码
-直接通过 git 下载 Vant Weapp 源代码，并将dist目录拷贝到自己的项目中。
+直接通过 git 下载 mp-loading 源代码，并将 dist 目录拷贝到自己的项目中。
 ``` bash
 git clone git@github.com:MPComponent/mp-loading.git
 ```
@@ -40,8 +40,9 @@ git clone git@github.com:MPComponent/mp-loading.git
 ```
 
 ### 效果
-首页            |  详情
+基础用法            |  自定义用法
 :-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/20694238/61963699-c8fba600-affe-11e9-8ac8-937c18868fba.gif)  |  ![](https://user-images.githubusercontent.com/20694238/61962642-905acd00-affc-11e9-8628-0211d709a8d0.gif)
 
 ### 在开发者工具中预览
 
