@@ -12,7 +12,7 @@
   ],
   "usingComponents": {
     "demo-block": "../../components/demo-block/index",
-    "mp-loading": "../../dist/mp-loading/index"
+    "mp-loading": "../../dist/index"
   },
   "sitemapLocation": "sitemap.json"
 }
