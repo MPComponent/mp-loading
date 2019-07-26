@@ -2,7 +2,7 @@
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  color: rgba(69,90,100,.6);
+  color: rgba(69,90,100);
   padding: 20px 15px 15px;
 }
 

@@ -1,6 +1,20 @@
-<demo-block title="Loading Component" padding>
+<demo-block title="小程序 antd 加载组件" padding>
   <view class="mp-loading">
-    <mp-loading></mp-loading>
-    <mp-loading size="40"></mp-loading>
+    <view class="demo-block-item">
+      <view class="title">简单的 Loading 状态</view>
+      <mp-loading></mp-loading>
+    </view>
+    <view class="demo-block-item">
+      <view class="title">自定义 Loading 颜色</view>
+      <mp-loading color='#4fc08d'></mp-loading>
+    </view>
+    <view class="demo-block-item">
+      <view class="title">自定义 Loading 大小</view>
+      <mp-loading color='#4fc08d' size='45'></mp-loading>
+    </view>
+    <view class="demo-block-item">
+      <view class="title">自定义 Loading 提示</view>
+      <mp-loading showTip tip='loading...'></mp-loading>
+    </view>
   </view>
 </demo-block>

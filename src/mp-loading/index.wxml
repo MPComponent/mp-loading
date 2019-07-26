@@ -7,5 +7,4 @@
   <block wx:if="{{showTip}}">
   <view class="spin-tip" style="color: {{color}}">{{tip}}</view>
   </block>
-  
 </View>

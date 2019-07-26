@@ -1,0 +1,12 @@
+page {
+  min-height: 100%;
+  background: #fafafa;
+}
+.demo-block-item {
+  margin-bottom: 30px;
+}
+.title {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: rgba(69,90,100,.6);
+}
