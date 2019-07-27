@@ -50,6 +50,32 @@ git clone git@github.com:MPComponent/mp-loading.git
 :-------------------------:|:-------------------------:
 ![](https://user-images.githubusercontent.com/20694238/61963699-c8fba600-affe-11e9-8ac8-937c18868fba.gif)  |  ![](https://user-images.githubusercontent.com/20694238/61962642-905acd00-affc-11e9-8628-0211d709a8d0.gif)
 
+### Props
+
+* **size**
+  * 说明：组件尺寸，单位 px
+  * 类型：`Number`
+  * 默认值：`30`
+  * 是否必填：否
+
+* **color**
+  * 说明：组件颜色
+  * 类型：`String`
+  * 默认值：`#1890ff`
+  * 是否必填：否
+
+* **showTip**
+  * 说明：是否显示加载文案
+  * 类型：`Boolean`
+  * 默认值：`false`
+  * 是否必填：否（当自定义加载提示时必填）
+
+* **tip**
+  * 说明：组件加载提示
+  * 类型：`String`
+  * 默认值：`加载中...`
+  * 是否必填：否
+
 ### 在开发者工具中预览
 
 ``` bash
